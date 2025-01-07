@@ -1,0 +1,38 @@
+/*PRE-SETS*/
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+    --preto:#2B2B2B;
+    --branco:#ffffff;
+    --cor-primaria:#264653;
+    --cor-secundaria: #F4A261;
+}
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    color:var(--preto);
+    font-family: "Roboto";
+    list-style: none;
+    text-decoration: none;
+}
+
+
+/*HEADER*/
+
+header{
+    height: 50px;
+    background-color: var(--cor-primaria);
+    color: #fff;
+}
+
+.banner{
+    background: url(../images/bg-headline.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: calc(100vh - 50px);
+}
+
+
+
