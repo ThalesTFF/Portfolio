@@ -40,15 +40,18 @@ header{
 
 header .header-area{
     display: flex; 
+    height: 80px;
 }
 
 
 header .logo{
     width: 200px;
     padding: 10px;  
+    display: flex;
+    padding-top: 5px;
 }
 header .logo img{
-    width: 70px
+    width: 70px;
 }
 
 
@@ -73,7 +76,7 @@ header .main-menu li a{
     height: 100%;
     align-items: center;
     padding: 0px 30px;
-    font-size: 20px;
+    font-size: 16px;
     color: var(--branco);
     transition: all linear 0.2s;
 }
@@ -93,7 +96,7 @@ header .contact-menu li a{
     align-items: center;
     padding: 0px 30px;
     color: var(--branco);
-    font-size: 20px;
+    font-size: 16px;
     background-color: blue;
     background-color: var(--cor-secundaria);
     text-shadow: 1px 1px 3px var(--preto);
@@ -121,7 +124,7 @@ header .contact-menu li a:hover{
     background-size: cover;
     background-position-x: right;
     background-position-y:bottom ;
-    height: calc(100vh - 95px);
+    height: calc(100vh - 80px);
     
 }
 .banner .container{
@@ -149,7 +152,7 @@ header .contact-menu li a:hover{
     margin-left: 20px;
 }
 .banner .infos-area h1{
-    font-size: 48px;
+    font-size: 42px;
     text-transform: capitalize;
     font-family: "Playfair Display";
     font-weight: 700;
@@ -158,7 +161,7 @@ header .contact-menu li a:hover{
 }
 .banner .infos-area h1 span{
     color: var(--cor-secundaria);
-    font-size: 48px;
+    font-size: 42px;
     text-transform: capitalize;
     font-family: "Playfair Display";
     font-weight: 700;
@@ -166,21 +169,21 @@ header .contact-menu li a:hover{
 }
 .banner .infos-area p{
     color: var(--branco);
-    font-size: 25px;
+    font-size: 22px;
     font-family: "Playfair Display";
     font-weight: 600;
     margin-bottom: 15px;
 }
 .banner .infos-area p span{
     color: var(--cor-secundaria);
-    font-size: 25px;
+    font-size: 22px;
     font-family: "Playfair Display";
     font-weight: 600;
     text-shadow: 1px 0px 5px #835734;
     margin-bottom: 15px;
 }
 .banner .infos-area h2{
-    font-size: 40px;
+    font-size: 30px;
     text-transform: capitalize;
     font-family: "Playfair Display";
     font-weight: 700;
@@ -196,8 +199,8 @@ header .contact-menu li a:hover{
 
 }
 .banner .image-area{
-    width: 350px;
-    height: 632px;
+    width: 250px;
+    height: 445px;
     padding: 12px;
     border-radius: 5px;
     background-color: var(--fundo-transparente-escuro);
