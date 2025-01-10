@@ -1,0 +1,257 @@
+/*MEDIA QUERY*/
+
+/*TELAS GRANDES*/
+@media (min-width:1690px){
+    /*HEADER*/
+
+    header .container{
+        height: 120px;
+    }
+    header .logo img{ 
+        width: 100px;
+    }
+
+
+    header .menu ul li a {
+        font-size: 16px;
+    }
+
+
+
+
+    /*BANNER*/
+    .banner .banner-infos{
+        width: 100%;
+    }
+
+
+    .banner .banner-infos h1,
+    .banner .banner-infos h1 span{
+        font-size: 70px;
+    }
+
+
+    .banner span{
+        font-size: 40px;
+    }
+
+
+    .banner .banner-infos h2{
+        font-size: 60px;
+    }
+
+
+    .banner .banner-infos p{
+        font-size: 30px;
+        letter-spacing: 5px;
+        line-height: 40px;
+    }
+}
+
+
+
+
+
+
+
+
+
+/*Desktops padrão e laptops*/
+@media (min-width:975px) and (max-width:1140px){
+    /*HEADER*/
+
+    header .menu ul li a {
+        text-align: center;
+        padding: 0px 15px;
+        font-size: 10px;
+        word-spacing: 5px;
+        line-height: 18px;
+        letter-spacing: 4px;
+    }
+
+
+
+
+    /*BANNER*/
+    
+    .banner .banner-infos h1,
+    .banner .banner-infos h1 span{
+        font-size: 30px;
+    }
+
+
+    .banner span{
+        font-size: 16px;
+    }
+
+
+    .banner .banner-infos h2{
+        font-size: 22px;
+    }
+
+
+    .banner .banner-infos p{
+        font-size: 14px;
+    }
+}
+
+
+
+
+
+
+
+
+
+@media (min-width:650px) and (max-width:974px){
+    /*HEADER*/
+    header .container{
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    header .logo{
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+
+    header .menu{
+        width: 100%;
+    }
+    header .menu ul{
+        flex-direction: column;
+        width: 100%;
+    }
+    header .menu ul li a {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        padding: 15px 15px;
+        font-size: 10px;
+        word-spacing: 5px;
+        line-height: 18px;
+        letter-spacing: 4px;
+    }
+
+
+    /*BANNER*/
+
+    .banner{
+        height: auto;
+    }
+    .banner .banner-infos{
+        margin-top: 50px;
+        padding: 20px;
+        margin-bottom: 50px;
+    }
+    
+    .banner .banner-infos{
+        padding: 30px;
+    }
+
+
+    .banner .banner-infos h1,
+    .banner .banner-infos h1 span{
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+
+
+    .banner span{
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+
+    .banner .banner-infos h2{
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+
+
+    .banner .banner-infos p{
+        font-size: 14px;
+    }
+}
+
+
+
+
+
+
+
+
+
+@media (max-width:650px){
+    /*HEADER*/
+    header .container{
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    header .logo{
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+
+    header .menu{
+        width: 100%;
+    }
+    header .menu ul{
+        flex-direction: column;
+        width: 100%;
+    }
+    header .menu ul li a {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        padding: 15px 15px;
+        font-size: 10px;
+        word-spacing: 5px;
+        line-height: 18px;
+        letter-spacing: 4px;
+    }
+
+
+    /*BANNER*/
+    .banner{
+        height: auto;
+    }
+    .banner .banner-infos{
+        margin-top: 50px;
+        padding: 20px;
+        margin-bottom: 50px;
+    }
+
+
+    .banner .banner-infos h1,
+    .banner .banner-infos h1 span{
+        font-size: 20px;    
+        letter-spacing: 4px;
+        margin-bottom: 20px;
+    }
+
+
+    .banner span{
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+
+
+    .banner .banner-infos h2{
+        font-size: 18px;
+        letter-spacing: 4px;
+        margin-bottom: 20px;
+    }
+
+
+    .banner .banner-infos p{
+        letter-spacing:3px;
+        font-size: 10px;
+        line-height: 14px;
+    }
+}
