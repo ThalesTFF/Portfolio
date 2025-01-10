@@ -140,6 +140,7 @@
 
     .banner{
         height: auto;
+        min-height: calc(100vh - 80px);
     }
     .banner .banner-infos{
         margin-top: 50px;
@@ -220,6 +221,7 @@
     /*BANNER*/
     .banner{
         height: auto;
+        min-height: calc(100vh - 80px);
     }
     .banner .banner-infos{
         margin-top: 50px;
