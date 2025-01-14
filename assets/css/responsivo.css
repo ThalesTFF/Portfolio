@@ -1,0 +1,96 @@
+/*MEDIA QUERYS*/
+
+@media (min-width:551px) and (max-width:950px){
+    /*HEADER*/
+
+    header .container{
+        height: auto;
+        align-items:center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+
+    header .logo{
+        width: 100%;
+        padding: 40px 0px;
+    }
+    header .logo img{
+        width:120px;
+    }
+
+
+    header nav{
+        width: 100%;
+    }
+    header nav ul{
+        width: 100%;
+        flex-direction: column;
+    }
+    header nav ul li a{
+        padding: 30px 0px;
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+@media (max-width:550px){
+    /*HEADER*/
+
+    header .container{
+        height: auto;
+        align-items:center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+
+    header .logo{
+        width: 100%;
+        padding: 40px 0px;
+    }
+    header .logo img{
+        width:120px;
+    }
+
+
+    header nav{
+        width: 100%;
+    }
+    header nav ul{
+        width: 100%;
+        flex-direction: column;
+    }
+    header nav ul li a{
+        padding: 30px 0px;
+        width: 100%;
+        justify-content: center;
+    }
+
+
+    /*BANNER*/
+    .banner .banner-area{
+        margin-top: 30px;
+        width: 90%;
+    }
+
+    .banner .banner-area h1,
+    .banner .banner-area h1 span{
+        font-size: 30px;
+    }
+    .banner .banner-area span{
+        font-size: 16px;
+
+    }
+    .banner .banner-area h2{
+        font-size: 24px;
+    }
+}
