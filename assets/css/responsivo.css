@@ -1,0 +1,150 @@
+/*MEDIA QUERYS*/
+
+@media (min-width:551px) and (max-width:950px){
+    /*HEADER*/
+
+    header .container{
+        height: auto;
+        align-items:center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+
+    header .logo{
+        width: 100%;
+        padding: 40px 0px;
+    }
+    header .logo img{
+        width:120px;
+    }
+
+
+    header nav{
+        width: 100%;
+    }
+    header nav ul{
+        width: 100%;
+        flex-direction: column;
+    }
+    header nav ul li a{
+        padding: 30px 0px;
+        width: 100%;
+        justify-content: center;
+    }
+
+
+
+
+    /*SOBRE*/
+
+    .sobre .sobre-content{
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
+
+
+
+
+
+@media (max-width:550px){
+    /*HEADER*/
+
+    header .container{
+        height: auto;
+        align-items:center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+
+    header .logo{
+        width: 100%;
+        padding: 40px 0px;
+    }
+    header .logo img{
+        width:120px;
+    }
+
+
+    header nav{
+        width: 100%;
+    }
+    header nav ul{
+        width: 100%;
+        flex-direction: column;
+    }
+    header nav ul li a{
+        padding: 30px 0px;
+        width: 100%;
+        justify-content: center;
+    }
+
+
+
+
+    /*BANNER*/
+    .banner .banner-area{
+        margin-top: 30px;
+        width: 90%;
+    }
+
+    .banner .banner-area h1,
+    .banner .banner-area h1 span{
+        font-size: 30px;
+    }
+    .banner .banner-area span{
+        font-size: 16px;
+
+    }
+    .banner .banner-area h2{
+        font-size: 24px;
+    }
+
+
+
+
+    /*SOBRE*/
+    .sobre .sobre-content{
+        grid-template-columns: 1fr;
+        padding: 0px 20px;
+        padding-top: 50px;
+    }
+
+
+    .sobre .sobre-title h2{
+        text-align: center;
+        padding: 0px 20px;
+        font-size: 25px;
+    }
+
+
+    .sobre .sobre-left-side h3{
+        text-align: center;
+        font-size: 25px;
+    }
+    .sobre .title-bar{
+        width: 70%;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+
+    .sobre .sobre-right-side{
+        padding: 0px;
+    }
+
+    .sobre .sobre-right-side .image-area{
+        width: 250px;
+    }
+    .sobre .sobre-right-side .image-area img{
+        width: 250px;
+        height: auto;
+        transform: translate(15px, -15px);
+    }
+
+    
+}

@@ -1,0 +1,345 @@
+/*PRE-SETS*/
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+    --preto:#020202;
+    --cinza-escuro:#1c1c1c;
+    --branco:#ffffff;
+    --azul:#00E0FF;
+    --roxo: #9D00FF;
+    --magenta: #FF006E;
+}
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    color:var(--preto);
+    font-size: 18px;
+    font-family: "Roboto";
+    list-style: none;
+    text-decoration: none;
+}
+.container{
+    width: 100%;
+    max-width: 1480px;
+    margin: auto;
+}
+.botao{
+    display: inline-block;
+    text-align: center;
+    width: 250px;
+    padding: 15px 5px;
+    color: var(--branco);
+    font-size: 14px;
+    letter-spacing: 3px;
+    word-spacing: 5px;
+    border: 3px solid transparent;
+    animation: borda-animada 5s infinite ease; /* Animação contínua do gradiente da borda */
+    transition: all linear 0.3s;
+}
+.botao:hover{
+    transform: scale(1.05);
+}
+
+
+
+
+
+
+
+
+
+/*ANIMAÇÕES*/
+
+/* ANIMAÇÃO DA BORDA */
+@keyframes borda-animada {
+    0% {
+        border-image: linear-gradient(90deg, var(--azul), var(--roxo));
+        border-image-slice: 1; /*CONTROLA O ZOOM DA BORDA*/
+    }
+    50% {
+        border-image: linear-gradient(90deg, var(--roxo), var(--magenta));
+        border-image-slice: 1; 
+    }
+    100% {
+        border-image: linear-gradient(90deg, var(--azul), var(--roxo));
+        border-image-slice: 1; 
+    }
+}
+
+/*ANIMAÇÃO DE FUNDO*/
+@keyframes fundo-animado {
+    0%{
+        background-position: 0% 50%;
+    }
+
+    50%{
+        background-position: 100% 50%;
+    }
+
+    100%{
+        background-position: 0% 50%;
+    }
+}
+
+
+
+
+
+
+
+
+
+/*HEADER*/
+header{
+    background-color: var(--preto);
+}
+header .container{
+    display: flex;
+    height: 90px;
+}
+
+
+header .logo{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 150px;
+    padding: 5px 0px;
+}
+header .logo img{
+    width:75px;
+}
+
+
+header nav{
+    flex:1;
+    display: flex;
+    flex-direction: row-reverse;
+}
+header nav ul{
+    display: flex;
+}
+header nav ul li a{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    padding: 0px 30px;
+    color: var(--branco);
+    text-transform: uppercase;
+    font-size: 12px;
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 3px;
+    word-spacing: 5px;
+    transition: all ease 1s;
+    background: transparent;
+    animation: fundo-animado 5s ease infinite;
+}
+header nav li a:hover{
+    background:linear-gradient(to right, var(--azul), var(--roxo), var(--magenta));
+    background-size: 300% 300%;
+    background-clip: text;
+    color: transparent;
+}
+
+
+header nav li .contato{
+    background:linear-gradient(to right, var(--azul), var(--roxo), var(--magenta));
+    background-size: 300% 300%;
+    animation: fundo-animado 5s ease infinite;
+}
+header nav li .contato:hover{
+    color: var(--branco);
+    background-clip: border-box;    
+}
+
+
+
+
+
+
+
+
+
+/*BANNER*/
+.banner{
+    height: auto;
+    min-height: calc(100vh - 90px);
+    background: url(../images/bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.banner .container{
+    height: auto;
+    min-height: calc(100vh - 90px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.banner .banner-area{
+    display: flex;
+    width: 80%;
+    height:auto;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 30px;
+    background-color: rgba(17, 17, 17, 0.5);
+    backdrop-filter: blur(8px);
+}
+
+
+.banner .banner-area h1{
+    margin-bottom: 50px;
+}
+.banner .banner-area h1,
+.banner .banner-area h1 span{
+    color: var(--branco);
+    font-family: "Playflair Display";
+    font-size: 55px;
+    font-weight: 500;
+    text-transform: capitalize;
+    letter-spacing: 5px;
+    word-spacing: 5px;
+    text-align: center;
+}
+.banner .banner-area span,
+.banner .banner-area h1 span{
+    background:linear-gradient(to right, var(--azul), var(--roxo), var(--magenta));
+    background-size: 300% 300%;
+    background-clip: text;
+    color: transparent;
+    animation: fundo-animado ease 5s infinite ;
+}
+.banner .banner-area span{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.banner .banner-area h2{
+    color: var(--branco);
+    font-family: "Playflair Display";
+    font-size: 45px;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 5px;
+    word-spacing: 5px;
+    margin-bottom: 50px;
+}
+.banner .banner-area p{
+    color: var(--branco);
+    text-align: center;
+    letter-spacing: 3px;
+    font-family: "Pçayflair Display";
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+
+
+
+
+
+
+
+
+
+/*SOBRE*/
+.sobre{
+    background:linear-gradient(to bottom, #020202, #111111);
+    background-size: cover;
+    background-position: top right;
+
+}
+.sobre .container{
+    padding: 50px 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.sobre .sobre-title{
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sobre .sobre-title span{
+    color: transparent;
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    background:linear-gradient(to right, var(--azul), var(--roxo), var(--magenta));
+    background-size: 300% 300%;
+    background-clip: text;
+    animation: fundo-animado ease 5s infinite;
+}
+.sobre .sobre-title h2{
+    color: var(--branco);
+    margin-bottom: 20px;
+    font-size: 30px;
+    letter-spacing: 3px;
+}
+
+
+.sobre .sobre-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    padding: 0px 50px;
+    padding-top: 50px;
+}
+
+
+.sobre .sobre-left-side{
+    padding: 10px;
+}
+.sobre .sobre-left-side h3{
+    max-width: 350px;
+    color: var(--branco);
+    font-family: "Playflair Display";
+    letter-spacing: 3px;
+    word-spacing: 1px;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+.sobre .title-bar{
+    width: 200px;
+    height: 3px;
+    margin-bottom: 30px;
+    background:linear-gradient(to right, var(--azul), var(--roxo), var(--magenta));
+    background-size: 300% 300%;
+    animation: fundo-animado ease 5s infinite;
+}
+.sobre .sobre-left-side p{
+    color: var(--branco);
+    font-size: 16px;
+    letter-spacing: 3px;
+    line-height: 22px;
+    padding: 10px;
+}
+.sobre .sobre-left-side p::first-letter{
+    font-weight: 600;
+    font-size: 22px;
+}
+
+
+.sobre .sobre-right-side{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+.sobre .sobre-right-side .image-area{
+    width: 300px;
+    border: 3px solid transparent;
+    animation: borda-animada 5s infinite ease;
+}
+.sobre .sobre-right-side .image-area img{
+    width: 300px;
+    height: auto;
+    transform: translate(25px, -25px);
+}
