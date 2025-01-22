@@ -1,19 +1,5 @@
 /*MEDIA QUERYS*/
 
-@media (max-width:1440px){
-    .habilidades .habilidades-area{
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
-
-
-
-
-
-
-
-
 @media (min-width:661px) and (max-width:980px){
     /*HEADER*/
 
@@ -91,17 +77,6 @@
         background-size: cover;
         background-position: center center; 
     }
-
-
-
-
-    /*HABILIDADES*/
-
-    .habilidades .habilidades-area{
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20;    
-        padding: 50px 50px;
-    }
 }
 
 
@@ -161,6 +136,7 @@
     /*PROJETOS*/
     .projetos .projetos-area{
         height: auto;
+        padding: 0px;
     }
 
     .projetos .slide-content{
@@ -189,17 +165,6 @@
         background: url(../images/projetos/bg-optica-grande.jpg);
         background-size: cover;
         background-position: center center; 
-    }
-
-
-
-
-    /*HABILIDADES*/
-
-    .habilidades .habilidades-area{
-        grid-template-columns: 1fr;
-        gap: 20;
-        padding: 50px 50px;
     }
 }
 
@@ -321,6 +286,7 @@
 
     .projetos .projetos-area{
         height: auto;
+        padding: 0px;
     }
 
     .projetos .slide-content{
@@ -365,19 +331,5 @@
         background: url(../images/projetos/bg-optica-mobile.jpg);
         background-size: cover;
         background-position: center center; 
-    }
-
-
-    /*HABILIDADES*/
-    .habilidades .habilidades-title span{
-        font-size: 18px;
-        padding: 0px 20px;
-    }
-       
-    .habilidades .habilidades-area{
-        grid-template-columns: 1fr;
-        gap: 20;
-        padding: 50px 30px;
-        width: 100%;
     }
 }
