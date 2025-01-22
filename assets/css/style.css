@@ -393,6 +393,7 @@ header nav li .contato:hover{
     flex-direction: column;
     align-items: center;
     overflow: hidden;
+    padding: 60px;
 }
 .projetos .projeto-area-slides{
     width: 100%;
@@ -402,7 +403,7 @@ header nav li .contato:hover{
 .projetos .projeto-slider{
     width: calc(100% * 3); 
     height: 100%;
-    margin-left: calc(-00% - 2px);  /*USADO PARA CONTROLA A APARIÇÃO DOS SLIDES*/
+    margin-left: calc(000% - 0px);  /*USADO PARA CONTROLA A APARIÇÃO DOS SLIDES*/
     overflow: hidden;
 }
 .projetos .slide{
@@ -515,7 +516,7 @@ header nav li .contato:hover{
     background-repeat: no-repeat;
 }
 .projetos .slide-2{
-    background: url(../images/fundo-textura.jpg);
+    background: url(../images/bg.jpg);
     background-size: cover;
     background-position: top center;
 }
@@ -534,12 +535,12 @@ header nav li .contato:hover{
     height: 15px;
     margin: 0px 3px;
     border-radius: 15px;
-    border: 1px solid #1c1c1c;
+    border: 1px solid var(--branco);
     cursor: pointer;
 }
 .projetos .selecionado{
-    background-color: rgba(28, 28, 28, 0.5);
-    border: 1px solid #1c1c1c;
+    background-color: var(--branco);
+    border: 1px solid var(--branco);
 }
 
 
@@ -553,28 +554,24 @@ header nav li .contato:hover{
 /*HABILIDADES*/
 
 .habilidades{
-    padding: 70px 0px;
-    background: url(../images/bg-skills.jpg);
-    background-size: cover;
-    background-position: bottom;
+    padding: 50px;
+    background:linear-gradient(to bottom, #020202, #181818);
+    background-color: blue;
 }
-
 .habilidades .container{
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-
-.habilidades .habilidades-title{
-    display: flex;
     flex-direction: column;
-    text-align: center;
-    margin-bottom: 50px;
 }
-.habilidades .habilidades-title span{
+
+.habilidades .hab-title{
+    margin-bottom: 50px;
+    text-align: center;
+}
+.habilidades .hab-title span{
     font-size: 18px;
+    display: block;
     font-weight: 600;
     color: transparent;
     letter-spacing: 3px;
@@ -584,59 +581,67 @@ header nav li .contato:hover{
     animation: fundo-animado ease 5s infinite;
     margin-bottom: 15px;
 }
-.habilidades .habilidades-title h2{
+.habilidades .hab-title h2{
     font-size: 35px;
-    color: var(--cinza-escuro);
+    color: var(--branco);
     font-family: "PLayflair Display";
     letter-spacing: 3px;
+    margin: 0px 10px;
 }
 
 
-
-.habilidades .habilidades-area{
-    width: auto;
-    background-color: rgba(17, 17, 17, 0.5);
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    justify-items:center;
+.habilidades-area{
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
-    padding: 50px 100px;
-    gap: 50px;
-    transition: all linear 0.4s;
-    backdrop-filter: blur(5px);
-}
-.habilidades .habilidades-item{
-    width: 250px;
-    background-color: rgba(255, 255, 255, 0.7);
+ }
+
+
+.habilidades .hab-item{
+    min-width: 250px;
+    max-width: 300px;
     height: 300px;
-    padding: 15px;
-    cursor: pointer;
-    transition: all linear 0.4s;
-}
-.habilidades .habilidades-item:hover{
-    transform: scale(1.08);
-}
-.habilidades-item-area{
+    flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    height: 100%;
-    padding: 15px;
-    border: 2px solid transparent;
-    animation: borda-animada 5s infinite ease;
-    transition: all linear 0.3s;
+
 }
-.habilidades .habilidades-item img{
+
+.habilidades .hab-icone{
+    margin: 10px;
+    width: 100px;
     height: 100px;
-    padding-top: 10px;
-    padding-bottom: 25px;
+    border-radius: 50px;
+    background-color: var(--branco);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all ease 0.4s;
+    margin-bottom: 40px;
 }
-.habilidades .habilidades-item h3{
-    color: #1c1c1c;
+.habilidades .hab-icone:hover{
+    transform: scale(1.08);
+}
+.habilidades .hab-icone img{
+    width: 50px;
+}
+.habilidades .habilidades-area p{
+    color: var(--branco);
     font-size: 20px;
-    font-family: "Playflair Display";
-    letter-spacing: 3px;
     font-weight: 500;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+.habilidades .hab-bar{
+    width: 50px;
+    height: 1px;
+    background:linear-gradient(to right, var(--azul), var(--roxo), var(--magenta));
+    background-size: 300% 300%;
+    animation: fundo-animado ease 5s infinite ;
 }
