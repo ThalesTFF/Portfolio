@@ -1,0 +1,80 @@
+@media (max-width:920px){
+  
+  /*HEADER*/
+  header{
+    height: auto;
+    padding-bottom:50px ;
+  }
+
+  header .container{
+    padding: 0;
+  }
+  header nav{
+    height: auto;
+  }
+  header nav ul{
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    background-color: rgba(168, 168, 168, 0.2);
+
+  }
+
+  header nav .contate-me{
+    margin-left: 0px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+  }
+
+
+  header .header-content{
+    margin-top: 20px;
+    flex-direction: column;
+  }
+
+  header .header-leftside{
+    margin: 60px 0px;
+  }
+  header .header-leftside h1{
+    text-align: center;
+    font-size: 40px;
+    line-height: 52px;
+  }
+
+
+
+
+
+
+
+
+
+  /*SOBRE*/
+  #sobre .widget{
+    height: auto;
+  }
+  #sobre .widget-content{
+    flex-direction: column;
+    margin-bottom: 100px;
+  }
+  #sobre .img-area img{
+    width: 250px;
+    transform: translate(-10px, -20px);
+}
+
+
+
+
+
+
+
+
+
+
+  /*PROJETOS*/
+  
+  #projetos .projetos-area{
+    grid-template-columns: 1fr;
+  } 
+
+}
