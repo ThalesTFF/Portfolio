@@ -1,0 +1,173 @@
+@media (min-width:500px) and (max-width:920px) {
+  header,
+  header nav{
+    height: auto;
+  }
+
+  header nav ul{
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+  }
+
+  header nav ul li{
+    width: 100%;
+    margin: 5px 0px;
+  }
+
+  header nav ul li:nth-child(5) {
+    margin-top: 30px;
+  }
+
+  header nav ul li:nth-child(5) a{
+    margin-left: 0px;
+  }
+
+
+  header .header-content{
+    margin-top: 20px;
+  }
+
+  header .header-content h1,
+  header .header-content h1 span{
+    font-size: 45px;
+    line-height: 55px;
+  }
+
+  header .header-content img{
+    width: 500px;
+  }
+
+
+
+
+/*SOBRE*/
+
+  #sobre .container{
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  #sobre .widget-content{
+    flex-direction: column;
+  }
+
+  #sobre .lado-esq{
+    margin-bottom: 60px;
+  }
+
+  #sobre .lado-dir{
+    justify-content: center;
+  }
+
+
+
+
+  /*PROJETOS*/
+
+  #projetos .projetos-area{
+    grid-template-columns: 1fr;
+    padding: 0px;
+    gap: 6px;
+  }
+
+  #projetos .projeto{
+    margin: auto;
+    max-width: 450px;
+  }
+}
+
+
+
+
+
+
+
+
+
+@media (max-width:499px){
+  header,
+  header nav{
+    height: auto;
+  }
+
+  header nav ul{
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+  }
+
+  header nav ul li{
+    width: 100%;
+    margin: 5px 0px;
+  }
+
+  header nav ul li:nth-child(5) {
+    margin-top: 30px;
+  }
+
+  header nav ul li:nth-child(5) a{
+    margin-left: 0px;
+  }
+
+  header .header-content{
+    margin-top: 20px;
+  }
+
+  header .header-content h1,
+  header .header-content h1 span{
+    font-size: 35px;
+    line-height: 50px;
+  }
+
+  header .header-content img{
+    width: 300px;
+  }
+
+  
+
+
+/*SOBRE*/
+
+  #sobre .container{
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  #sobre .widget-content{
+    flex-direction: column;
+  }
+
+  #sobre .lado-esq{
+    margin-bottom: 60px;
+  }
+
+
+  #sobre .lado-dir{
+    justify-content: center;
+  }
+  #sobre .img-area img{
+    transform: translate(-10px, -10px);
+    
+  }
+  #sobre .img-area img:hover{
+      
+      transform: translate(-15px, -15px);
+  }
+
+
+
+
+  /*PROJETOS*/
+
+  #projetos .projetos-area{
+    grid-template-columns: 1fr;
+    padding: 0px;
+    gap: 6px;
+  }
+
+  #projetos .projeto{
+    margin: auto;
+    max-width: 450px;
+  }
+}
