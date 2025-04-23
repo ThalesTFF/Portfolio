@@ -210,7 +210,7 @@
 
 /*BOTAO*/
 .botao-wrapper{
-    animation: fade-bottom linear 2.4s   forwards;
+    animation: fade-bottom linear 1.7s   forwards;
 }
 .botao{
     margin: 50px 0px;
@@ -266,7 +266,7 @@ header nav{
     height: 40px;
     display: flex;
     justify-content: center;
-    animation: fade-top ease-out 2.4s forwards;
+    animation: fade-top ease-out 1.7s forwards;
 }
 header nav ul{
     display: flex;
@@ -314,11 +314,11 @@ header .header-content h1 span{
     color: var(--cor-texto);
     line-height: 80px;
     text-align: center;
-    animation: fade-left linear 2.4s forwards;
+    animation: fade-left linear 1.7s forwards;
 }
 header .header-content h1 span{
     text-transform: uppercase;
-    animation: fade-lef linear 2.4s forwards;
+    animation: fade-lef linear 1.7s forwards;
     animation: fundo-animado ease-out 8s infinite;
     color: transparent;
     background:linear-gradient(270deg, var(--primario), #e4e683, var(--primario));
@@ -330,7 +330,7 @@ header .header-content h2{
     padding: 25px 0px;
     font-size: 26px;
     font-weight: 400;
-    animation: fade-right linear 2.4s forwards;
+    animation: fade-right linear 1.7s forwards;
     text-align: center;
 }
 header .header-content p{
@@ -339,7 +339,7 @@ header .header-content p{
     font-size: 16px;
     font-weight: 300;
     line-height: 22px;
-    animation: fade-right linear 2.4s forwards;
+    animation: fade-right linear 1.7s forwards;
 }
 
 
