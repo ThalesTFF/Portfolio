@@ -21,7 +21,9 @@
 
 
 /*PRESETS INICIAIS*/
-
+html{
+    overflow-x: hidden;
+}
 *{
     box-sizing: border-box;
     scroll-behavior: smooth;
